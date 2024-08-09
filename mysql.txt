@@ -1,0 +1,17 @@
+CREATE database bibliotecaBabel;
+use bibliotecaBabel;
+
+CREATE TABLE livrosCadastro(
+titulo VARCHAR(100) PRIMARY KEY,
+autor CHAR(100),
+ano INT(4),
+sinopse CHAR(700)
+)
+
+Tivemos um problemão. Vários na verdade. Primeiro a gente teve que lidar com a criação 
+do banco de dados e integração deste com o código em si, que por si só já foi  uma complicação.
+Ficamos nos enrolando pra fazer dar certo, e no final tecnicamente deu, mas nada é perfeito.
+
+Error: ENOENT: no such file or directory, stat 'C:\Users\021.898687\emocadu-atvFinal\index.html'
+
+Cannot GET /Livro2.html

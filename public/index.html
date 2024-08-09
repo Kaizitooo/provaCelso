@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <title>Biblioteca de Babel</title>
+</head>
+<body>
+    <style>
+        body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #0a0a0a;
+    color: rgb(243, 243, 243);
+    font-family: Arial, sans-serif;
+}
+
+.boasVindas {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: rgb(243, 243, 243);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: rgb(243, 243, 243);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.formulario {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #141313;
+    border-radius: 5px;
+}
+
+.formulario h1 {
+    text-align: center;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.formulario input {
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.formulario button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #0e1d2e;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #0e2746;
+}
+
+    </style>
+    <div class="boasVindas">
+
+        <h1>Seja bem-vindo à Biblioteca de Babel!</h1>
+
+        <h2>Livros disponíveis atualmente:</h2>
+        <ul>
+            <li><a href="Livro1.html?title=O Código da Vinci&author=Dan Brown&anoPub=2003&desc=Descrição do Livro 1">Livro 1: "O Código da Vinci"</a></li>
+            <li><a href="Livro2.html?title=A Culpa é Das Estrelas&author=John Green&anoPub=2012&desc=Descrição do Livro 2">Livro 2: "A Culpa é Das Estrelas"</a></li>
+            <li><a href="Livro3.html?title=O Senhor dos Anéis&author=J.R.R. Tolkien&anoPub=1954&desc=Descrição do Livro 3">Livro 3: "O Senhor dos Anéis"</a></li>
+        </ul>
+        
+    </div>
+
+    <div class="formulario">
+        <h1>Cadastre aqui o seu livro:</h1>
+        <form action="/submit" method="post">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="author">Autor:</label>
+            <input type="text" id="author" name="author" required>
+            <label for="anoPub">Ano de Publicação:</label>
+            <input type="number" id="anoPub" name="anoPub" required>
+            <label for="desc">Sinopse:</label>
+            <input type="text" id="desc" name="desc" required>
+            <button type="submit">Cadastrar Livro</button>
+        </form>        
+    </div>
+
+</body>
+</html>
+
+</body>
+</html>

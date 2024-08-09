@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Livro</title>
+</head>
+<body>
+    <h1>Detalhes do Livro</h1>
+
+    <div>
+        <strong>Título:</strong> <span id="title"></span>
+    </div>
+    <div>
+        <strong>Autor:</strong> <span id="author"></span>
+    </div>
+    <div>
+        <strong>Ano de Publicação:</strong> <span id="anoPub"></span>
+    </div>
+    <div>
+        <strong>Sinopse:</strong> <span id="desc"></span>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const title = urlParams.get('title');
+        const author = urlParams.get('author');
+        const anoPub = urlParams.get('anoPub');
+        const desc = urlParams.get('desc');
+
+        document.getElementById('title').textContent = title;
+        document.getElementById('author').textContent = author;
+        document.getElementById('anoPub').textContent = anoPub;
+        document.getElementById('desc').textContent = desc;
+    </script>
+</body>
+</html>
